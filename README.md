@@ -61,9 +61,78 @@ The project consists of two main parts:
 - **Groq AI** 🤖 (for text summarization)
 - **HTML & CSS** 🎨 (for styling the web interface)
 ---
+📝 **Cyber Attacks Analytics Dashboard - Workflow** 🔄
+
+  1️⃣ **Scraping News Websites** 🌐
+      ↳ Websites scraped for latest articles:
+          - Krebs on Security 🕵️‍♂️
+          - Cyberscoop 💻
+          - The Hacker News 📰
+
+      ➡️ Extract article information:
+          - Title 📝
+          - Date 📅
+          - Description 🧐
+    
+  2️⃣ **Summarizing Articles** 🤖
+      ↳ Each article's description is summarized using **Groq AI**:
+          - Short, concise overview 📚
+    
+  3️⃣ **Tagging Articles** 🏷️
+      ↳ Articles are tagged based on fraud categories using predefined keywords:
+          - Phishing 🐟
+          - Malware 🦠
+          - Social Engineering 🤔
+          - More categories... 🔐
+
+  4️⃣ **Storing and Organizing Data** 💾
+      ↳ Articles and their tags are stored in a **DataFrame**:
+          - Each article has its associated **tags**, **summaries**, and **dates**.
+    
+  5️⃣ **Data Visualization** 📊
+      ↳ Data displayed using **Dash**:
+          - Bar Chart 📊
+          - Pie Chart 🍰
+    
+      ➡️ Charts display the distribution of fraud types:
+          - Fraud categories on the x-axis (e.g., Phishing, Malware)
+          - Counts of articles on the y-axis 📈
+    
+  6️⃣ **User Interaction** 🔄
+      ↳ Users can:
+          - Toggle between Bar/Pie charts 🔀
+          - Expand/Collapse article summaries 🔍
+    
+  7️⃣ **Downloading Reports** 💾
+      ↳ Users can download:
+          - **CSV Report** 📥: Contains tagged articles and fraud categories
+          - **Chart Image** 📸: PNG of the current chart
+  
+  8️⃣ **Final Output** 🎉
+      ↳ Interactive dashboard with fraud insights and analytics. 📊🔒
+-----------------------------------------------------
+✨ **End Workflow** ✨
+
 ## 💻 **Installation Instructions** ⚙️
 
 1. **Clone the Repository**:
    ```bash
    git clone https://github.com/your-username/cyber-attacks-analytics-dashboard.git
    cd cyber-attacks-analytics-dashboard
+
+📁 cyber-attacks-analytics-dashboard/
+├── 📂 static/                # Static assets (CSS, images, etc.)
+│   ├── background.gif        # Background GIF
+│   └── styles.css            # Custom styles
+├── 📂 templates/             # HTML templates
+│   └── index.html           # Main template to display news
+├── app.py                    # Flask app to run the backend
+├── requirements.txt          # List of dependencies
+└── README.md                 # Project documentation
+
+🎯 To-Do / Future Enhancements 🚀
+ 🌍 Add support for more news sources and fraud categories.
+ 📅 Implement a more advanced date handling system to better sort articles by date.
+ 🌐 Create a real-time scraper that automatically fetches and updates the news data.
+ 💬 Build a user feedback system to improve article summarization and tagging accuracy.
+
