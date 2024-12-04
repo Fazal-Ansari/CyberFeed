@@ -122,13 +122,13 @@ The project consists of two main parts:
 
 📁 cyber-attacks-analytics-dashboard/
 ├── 📂 static/                # Static assets (CSS, images, etc.)
-│   ├── background.gif        # Background GIF
-│   └── styles.css            # Custom styles
+│   ├── 📄 background.gif     # Background GIF
+│   └── 📄 styles.css         # Custom styles
 ├── 📂 templates/             # HTML templates
-│   └── index.html           # Main template to display news
-├── app.py                    # Flask app to run the backend
-├── requirements.txt          # List of dependencies
-└── README.md                 # Project documentation
+│   └── 📄 index.html         # Main template to display news
+├── 📄 app.py                 # Flask app to run the backend
+├── 📄 requirements.txt       # List of dependencies
+└── 📄 README.md              # Project documentation
 
 
 🎯 To-Do / Future Enhancements 🚀
