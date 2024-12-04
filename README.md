@@ -130,6 +130,7 @@ The project consists of two main parts:
 ├── requirements.txt          # List of dependencies
 └── README.md                 # Project documentation
 
+
 🎯 To-Do / Future Enhancements 🚀
  🌍 Add support for more news sources and fraud categories.
  📅 Implement a more advanced date handling system to better sort articles by date.
